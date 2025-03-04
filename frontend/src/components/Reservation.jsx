@@ -24,13 +24,16 @@ const Reservation = () => {
           headers: {
             "Content-Type": "application/json",
           },
+          method: "POST",
+          credentials: "include",
           withCredentials: true,
+          body: JSON.stringify(data)
         }
       );
       toast.success(data.message);
       setFirstName("");
       setLastName("");
-      setPhone(0);
+      setPhone();
       setEmail("");
       setTime("");
       setDate("");

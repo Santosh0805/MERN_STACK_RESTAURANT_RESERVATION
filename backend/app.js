@@ -9,7 +9,7 @@ const app = express();
 dotenv.config({ path: "./config.env" });
 
 app.use(cors(
-  {origin:'*',
+  {origin:'https://mern-stack-restaurant-reservation-pink.vercel.app/',
     credentials: true 
   }
 ));

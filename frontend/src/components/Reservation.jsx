@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { SERVER } from "../App";
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,20 +18,11 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        "https://mern-stack-restaurant-reservation-9l8y.onrender.com/api/reservation/send",
-        { firstName, lastName, email, phone, date, time },
-        {
-          method: "POST",
-          credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-          body: JSON.stringify(data)
-        }
-      );
-      toast.success(data.message);
+      const res = await axios.post(`${SERVER}/api/reservation/send`,
+        { firstName, lastName, email, phone, date, time });
+
+      console.log("check", res)
+      toast.success(res.data.message);
       setFirstName("");
       setLastName("");
       setPhone();
@@ -39,7 +31,9 @@ const Reservation = () => {
       setDate("");
       navigate("/success");
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.log(error);
+      
+      // toast.error(error.response.data.message);
     }
   };
 

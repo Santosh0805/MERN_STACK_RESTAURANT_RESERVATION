@@ -18,9 +18,9 @@ const HeroSection = () => {
               <div className="textWithSvg">
                 <h1 className="title">Food</h1>
                 <h1 className="title dishes_title">Dishes</h1>
-                <img src="./threelines.svg" alt="threelines" />
+                <img src="" alt=""/>
               </div>
-              <img className="logo" src="logo.svg" alt="logo" />
+              <img className="" src="" alt="" />
             </div>
           </div>
         </div>

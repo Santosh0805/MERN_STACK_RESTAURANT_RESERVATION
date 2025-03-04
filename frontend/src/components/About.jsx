@@ -12,7 +12,7 @@ const About = () => {
               <h1 className="heading">ABOUT US</h1>
               <p>The only thing we're serious about is food.</p>
             </div>
-            <p className="mid"> </p>
+            <p className="mid"></p>
             <Link to={"/"}>
               Explore Menu{" "}
               <span>

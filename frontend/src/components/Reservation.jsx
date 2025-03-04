@@ -86,6 +86,7 @@ const Reservation = () => {
                 />
                 <input
                   type="number"
+                  required pattern="[0-9]"
                   placeholder="Phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}

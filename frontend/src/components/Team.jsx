@@ -7,9 +7,7 @@ const Team = () => {
         <div className="heading_section">
           <h1 className="heading">OUR TEAM</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            fugit dicta, ipsum impedit quam laboriosam quas doloremque quia
-            perferendis laborum.
+          Our teammate is a dedicated and skilled chef, ensuring high-quality dishes with consistency and creativity. Their efficiency, adaptability, and attention to detail make kitchen operations smooth and seamless. With a positive attitude and passion for cooking, they uplift the team and contribute to an excellent dining experience.
           </p>
         </div>
         <div className="team_container">

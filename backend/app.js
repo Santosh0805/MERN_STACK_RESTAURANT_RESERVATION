@@ -9,7 +9,9 @@ const app = express();
 dotenv.config({ path: "./config.env" });
 
 app.use(cors(
-  {origin:'*'}
+  {origin:'*',
+    credentials: true 
+  }
 ));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -95,7 +95,7 @@ const Reservation = () => {
                 />
               </div>
               <button type="submit" onClick={handleReservation}>
-                RESERVE NOW{" "}
+                RESERVE SEAT NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
                 </span>

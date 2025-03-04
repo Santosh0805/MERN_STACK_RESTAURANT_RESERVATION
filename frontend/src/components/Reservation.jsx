@@ -21,11 +21,11 @@ const Reservation = () => {
         "https://mern-stack-restaurant-reservation-9l8y.onrender.com/api/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
+          method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
-          method: "POST",
-          credentials: "include",
           withCredentials: true,
           body: JSON.stringify(data)
         }

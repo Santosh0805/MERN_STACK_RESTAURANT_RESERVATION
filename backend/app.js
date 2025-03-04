@@ -10,7 +10,7 @@ dotenv.config({ path: "./config/.env" });
 
 app.use(cors({
   origin :['https://mern-stack-restaurant-reservation-pink.vercel.app/'],
-  methods :[POST],
+  methods :['POST'],
   credentials: true 
 }
     
